@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Movie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Home/Animations/animation.css">
+</head>
+<body class="fade-in">
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Movie-Watch</a>            
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="../Upcoming-movies/index.html">UPCOMING</a></li>
+                <li><a href="#">TRENDING</a></li>
+                <li><a href="#footer">ABOUT</a></li>
+            </ul>
+            <div class="search-bar">
+                <div class="input-container">
+                    <input type="text" id="movieSearch" placeholder="Search for a movie..." />
+                </div>
+                <button id="searchButton">Search</button>
+            </div>
+        </nav>
+    </header>
+    <section id="containers">
+        <div class="container">
+            <div id="movie-details-container" class="movie-details" style="display: none;">
+                <h2 id="movie-title"></h2>
+                <img id="movie-poster" alt="Movie Poster" />
+                <p id="movie-overview"></p>
+                <p id="movie-release"></p>
+                <p id="movie-rating"></p>
+                <p id="movie-vote-count"></p>
+                <h3 id="Similar-Movies">Similar Movies</h3>
+                <div id="Similar-container" class="movie-cards-container"></div>
+            </div>
+            <div id="movie-cards" class="movie-cards-container">
+                <div id="recommended-container" class="movie-cards-container"></div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Movie-Watch</h3>
+                <p>Your go-to platform for discovering movies, staying updated on the latest releases, and enjoying personalized recommendations. We’re committed to making your movie-watching experience seamless and enjoyable.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Subscribe to Our Websites</h3>
+                <form id="subscribe-form">
+                    <label for="email">Get the latest updates and exclusive content:</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Connect with Us</h3>
+                <p>Follow us on :</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">Facebook</a>
+                    <a href="#" class="social-icon">Twitter</a>
+                    <a href="#" class="social-icon">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Movie-Watch | All Rights Reserved | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>    
+    <script src="data.js"></script>
+    <script src="scripts.js"></script>
+    <script src= "./Animations/animation.js"></script>
+</body>
+</html>
